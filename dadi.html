@@ -13,21 +13,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Email</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Dadi</title>
 </head>
 
-<body class="bg-dark">
-    <div id="app" class="container pt-5">
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <button type="submit" class="btn btn-primary" id="button">Submit</button>
-        </form>
+<body>
+    <div id="app" class="container-fluid d-flex flex-column gap-3">
+        <h1>LANCIO DEI DADI</h1>
+        <div id="show">
+            <button type="button" class="btn btn-dark" id="toggle">
+                Lancia il dado
+            </button>
+        </div>
+        <div id="hide">
+            <span id="punteggio-utente">Hai ottenuto un punteggio di: </span>
+            <span id="punteggio-PC">Il PC ha ottenuto un punteggio di: </span>
+            <span id="risultato"></span>
+            <span id="refresh">Riaggiorna la pagina per riprovare </span>
+        </div>
     </div>
-    <script src="emailscript.js"></script>
+    <script src="myscript.js"></script>
 </body>
 
 </html>
